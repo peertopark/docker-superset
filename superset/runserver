@@ -1,0 +1,24 @@
+#!/bin/sh
+ARG=$1
+if [[ "${ARG}" == "install" ]]; then
+	echo "# Create superset addmin"
+	fabmanager create-admin --app superset
+fi
+
+echo "# Database upgrade"
+superset db upgrade
+
+ARGEXAMPLES=$2
+if [[ "${ARGEXAMPLES}" == "examples" ]]; then
+	echo "# Load superset examples"
+	superset load_examples
+fi
+
+echo "# Init superset"
+superset init
+
+echo "# Start superset server"
+superset runserver
+
+
+

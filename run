@@ -1,0 +1,4 @@
+#!/bin/bash
+source config
+docker run -it -e MAPBOX_API_KEY="${MAPBOX}" -e SQLALCHEMY_DATABASE_URI="${DATABASE}" -e SECRET_KEY="${KEY}" -p 8088:8088  peertopark/superset
+
