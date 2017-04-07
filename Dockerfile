@@ -1,4 +1,4 @@
-FROM amancevice/superset:0.15.4
+FROM amancevice/superset:0.17.3
 MAINTAINER  PeertoPark
 USER root
 ADD superset/runserver .bin/runserver
