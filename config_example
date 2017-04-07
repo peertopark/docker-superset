@@ -1,3 +1,3 @@
 MAPBOX=""
-DATABASE='mysql://asdasd:asdasdsa@172.17.0.1:3306/intelligence'
+DATABASE='mysql://asdasd:asdasdsa@172.17.0.1:3306/superset'
 KEY="asdasfsadf"
